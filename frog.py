@@ -25,8 +25,8 @@ _, COLS = get_terminal_rows_cols()
 def main():
     steps = 0
     for i in range(ROUNDS):
-        # if i % (ROUNDS/100) == 0:
-            # show_status(i, ROUNDS)
+        if i % (ROUNDS/100) == 0:
+            show_status(i, ROUNDS)
         spots = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
         # start at -1
         next_spot = -1
